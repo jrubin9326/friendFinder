@@ -8,6 +8,11 @@ router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/home.html'));
 })
 
+router.get('/survey', function (req, res) {
+    res.sendFile(path.join(__dirname + '/public/survey.html'));
+});
+
+
 //add router
 app.use('/', router);
 app.listen(process.env.port || 8080);
