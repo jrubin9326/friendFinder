@@ -12,6 +12,9 @@ router.get('/survey', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/survey.html'));
 });
 
+router.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/home.html"));
+});
 
 //add router
 app.use('/', router);
