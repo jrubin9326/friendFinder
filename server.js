@@ -9,17 +9,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const apiRoutes = require("./app/apiRoutes.js");
-const router = require("./app/htmlRoutes.js");
+const htmlRouter = require("./app/htmlRoutes.js");
 
 app.use("/api", apiRoutes);
-app.use("/", router);
-
-// require("./app/apiRoutes")(app)
-// require("./app/htmlRoutes")(app)
-
-// app.get('./app/data/friends.js', (req, res) => {
-//     return res.json(friendsArray);
-// })
+app.use("/", htmlRouter);
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
