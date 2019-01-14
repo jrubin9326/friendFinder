@@ -12,7 +12,7 @@ let friendsData = require("./data/friends");
 // // })
 
 module.exports = function(app) {
-  app.get("/api/tables", (req, res) => {
+  app.get("/api/friends", (req, res) => {
     res.json(friendsData);
   });
 };
