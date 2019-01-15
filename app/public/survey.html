@@ -27,7 +27,7 @@
 
 
       <h4>Question 1</h4>
-      <p>You love paper</p>
+      <p>You love paper.</p>
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q1">
           <option value="">Select your option</option>
           <option value="1">1 (Strongly Disagree)</option>
@@ -37,7 +37,7 @@
           <option value="5">5 (Strongly Agree)</option>
       </select>
       <h3>Question 2</h3>
-      <p>You love pranking your friends</p>
+      <p>You love pranking your friends.</p>
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q2">
             <option value="">Select your option</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -48,7 +48,7 @@
         </select>
 
       <h3>Question 3</h3>
-      <p>Are you unsure of what you do at work?</p>
+      <p>You frequently wonder what you do at work.</p>
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q3">
             <option value="">Select your option</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -58,7 +58,7 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
       <h3>Question 4</h3>
-      <p>You never leave the house without makeup and the perfect outfit</p>
+      <p>You never leave the house without makeup and the perfect outfit.</p>
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q4">
             <option value="">Select your option</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -68,7 +68,7 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
       <h3>Question 5</h3>
-      <p>Are you obsessed with your pets?</p>
+      <p>You are obsessed with your pets.</p>
         <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q5">
                 <option value="">Select your option</option>
                 <option value="1">1 (Strongly Disagree)</option>
@@ -78,7 +78,7 @@
                 <option value="5">5 (Strongly Agree)</option>
             </select>
       <h3>Question 6</h3>
-      <p>Do you like to drink?</p>
+      <p>You love to drink (alcohol).</p>
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q6">
             <option value="">Select your option</option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -89,8 +89,7 @@
         </select>
       <h3>Question 7</h3>
       <p>
-        Have you ever been in love with someone who's in another relationship
-        with someone else?
+       You find yourself falling in love with someone that is in a relationship with someone else.
       </p>
 
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q7">
@@ -102,7 +101,7 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
       <h3>Question 8</h3>
-      <p>Do you love your job?</p>
+      <p>You love your job.</p>
 
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q8">
             <option value="">Select your option</option>
@@ -114,7 +113,7 @@
         </select>
 
       <h3>Question 9</h3>
-      <p>Do you use sexual double entendres when talking?</p>
+      <p>You frequently use sexual double entendres when talking.</p>
 
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q9">
             <option value="">Select your option</option>
@@ -123,9 +122,9 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
-        </select>
+     </select>
       <h3>Question 10</h3>
-      <p>Are you artistic?</p>
+      <p>You are artistic.</p>
 
       <select data-placeholder="" class="chosen-select btn btn-secondary dropdown-toggle" id="q10">
             <option value="">Select your option</option>
@@ -135,7 +134,7 @@
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
         </select>
-        <br>
+        <br> <br>
       <button
         type="submit"
         class="btn btn-primary btn-large btn-block"
@@ -144,7 +143,7 @@
         Submit
       </button>
       <br>
-      <a href="../data/friends.js" ::before>Friends API</a> |
+      <a href="/api/friends" ::before>Friends API</a> |
       <a href="https://github.com/jrubin9326/friendFinder" ::after>
         GitHub Repo</a
       >
@@ -167,29 +166,13 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- handles the data sent to the server-->
     <script type="text/javascript">
-      // Chosen CSS
-      var config = {
-        ".chosen-select": {},
-        ".chosen-select-deselect": {
-          allow_single_deselect: true
-        },
-        ".chosen-select-no-single": {
-          disable_search_threshold: 10
-        },
-        ".chosen-select-no-results": {
-          no_results_text: "Oops, nothing found!"
-        },
-        ".chosen-select-width": {
-          width: "95%"
-        }
-      };
 
-      for (var selector in config) {
-        $(selector).chosen(config[selector]);
-      }
+    //   for (var selector in config) {
+    //     $(selector).chosen(config[selector]);
+    //   }
 
       // Capture the form inputs
       $("#submit").on("click", event => {
