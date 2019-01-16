@@ -11,6 +11,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 require("./app/apiRoutes.js")(app);
 require("./app/htmlRoutes.js")(app); // loading connection and them immedit calling it w . the app;
 
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log("App listening on PORT: " + PORT);
 });

@@ -7,3 +7,11 @@ module.exports = function(app) {
     res.json(friendsArray);
   });
 };
+
+app.post("/api/friends", (req, res) => {
+  const user = req.body;
+  let userScore = user.scores.reduce((total, answer) => {
+    return parseInt(total) + parseInt(answer);
+  });
+});
+// friendsArray.push(user);
