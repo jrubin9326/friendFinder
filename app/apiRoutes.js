@@ -14,4 +14,4 @@ app.post("/api/friends", (req, res) => {
     return parseInt(total) + parseInt(answer);
   });
 });
-// friendsArray.push(user);
+
