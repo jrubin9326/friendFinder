@@ -10,8 +10,14 @@ module.exports = function(app) {
     const user = req.body;
     let userScore = user.scores.reduce((total, answer) => {
       return parseInt(total) + parseInt(answer);
-    });
+    )}
+    function addOfficeScore(arr) {
+        arr.forEach(character, scores) {
+            character.scores.reduce((total, answer) => {
+                return parseInt(total) + parseInt(answer); 
+            })
+        })
+    }
 
-    console.log(userScore);
-  });
-};
+});
+
