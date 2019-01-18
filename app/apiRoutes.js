@@ -10,14 +10,17 @@ module.exports = function(app) {
     const user = req.body;
     let userScore = user.scores.reduce((total, answer) => {
       return parseInt(total) + parseInt(answer);
-    )}
-    function addOfficeScore(arr) {
-        arr.forEach(character, scores) {
-            character.scores.reduce((total, answer) => {
-                return parseInt(total) + parseInt(answer); 
-            })
-        })
-    }
-
-});
-
+    });
+    difference(friendsArray);
+  });
+};
+//totals each characters from friendsArrays scores
+function difference(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(
+      arr[i].scores.reduce((total, answer) => {
+        return parseInt(total) + parseInt(answer);
+      })
+    );
+  }
+}
