@@ -15,7 +15,7 @@ let friendsArray = [
     name: "Jim Halpert",
     photo:
       "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    scores: [5, 1, 2, 3, 4, 5, 4, 3, 2, 1]
+    scores: [5, 1, 2, 3, 5, 5, 4, 3, 2, 1]
   },
   {
     name: "Pam Beesly",
@@ -27,7 +27,7 @@ let friendsArray = [
     name: "Andy Bernard",
     photo:
       "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    scores: [5, 5, 5, 5, 5, 1, 1, 1, 1, 1]
+    scores: [4, 4, 5, 5, 5, 1, 1, 1, 1, 1]
   },
   {
     name: "Kevin Malone",

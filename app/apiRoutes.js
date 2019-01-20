@@ -8,7 +8,7 @@ module.exports = function(app) {
   let closestMatch = {
     name: "",
     photo: "",
-    friendDifference: 1000000000
+    friendDifference: Infinity
   };
   app.post("/api/friends", (req, res) => {
     const user = req.body;
@@ -23,7 +23,9 @@ module.exports = function(app) {
       let characters = character.scores.reduce((total, answer) => {
         return parseInt(total) + parseInt(answer);
       });
+      // console.log(characters);
       difference += Math.abs(userScore - characters);
+
       if (difference <= closestMatch.friendDifference) {
         closestMatch.name = character.name;
         closestMatch.photo = character.photo;
@@ -31,7 +33,7 @@ module.exports = function(app) {
         console.log(
           `your chosen match is ${closestMatch.name} who has ${
             closestMatch.friendDifference
-          }`
+          } difference in results`
         );
       }
     }
