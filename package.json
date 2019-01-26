@@ -1,5 +1,28 @@
 {
-    "scripts":{
-        "start": "nodemon server.js"
-    }
+  "name": "friendFinder",
+  "version": "1.0.0",
+  "description": "An office-themed survey that matches you up with your most compatible Office character.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrubin9326/friendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrubin9326/friendFinder/issues"
+  },
+  "homepage": "https://github.com/jrubin9326/friendFinder#readme"
 }
